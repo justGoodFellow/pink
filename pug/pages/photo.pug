@@ -4,17 +4,17 @@ html(lang='ru')
   body
     header.page-header
       .page-header__row
-        a.page-header__logo.logo
+        a.page-header__logo.logo(href='index.html')
           img.logo__img(src='http://placehold.it/72x22' width='75' height='22' alt='Pink')
         button.page-header__menu-toggle(type='button')
           | Переключить меню
       nav.main-nav
         ul.main-nav__list
           li.main-nav__item
-            a.main-nav__link
+            a.main-nav__link(href='index.html')
               | Главная
           li.main-nav__item
-            a.main-nav__link(href='photo.html')
+            a.main-nav__link
               | Фотографии
           li.main-nav__item
             a.main-nav__link(href='form.html')
@@ -25,5 +25,7 @@ html(lang='ru')
 
     h1
       | Content
+
+    include ../layouts/page-footer.pug
 
     script(src='js/concatenated.js')
