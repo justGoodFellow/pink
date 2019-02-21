@@ -1,0 +1,243 @@
+doctype html
+html(lang='ru')
+  include ../layouts/head.pug
+  body.photos
+    header.page-header
+      .page-header__row
+        a.page-header__logo.logo(href='index.html')
+          img.logo__img(src='http://placehold.it/72x22' width='75' height='22' alt='Pink')
+        button.page-header__menu-toggle(type='button')
+          | Переключить меню
+      nav.main-nav
+        ul.main-nav__list
+          li.main-nav__item
+            a.main-nav__link(href='index.html')
+              | Главная
+          li.main-nav__item
+            a.main-nav__link
+              | Фотографии
+          li.main-nav__item
+            a.main-nav__link(href='contest.html')
+              | Конкурс
+          li.main-nav__item
+            a.main-nav__link(href='https://htmlacademy.ru/' target='_blank')
+              | HTML Academy
+
+    main
+      .hero
+        h1.hero__title
+          | Фотографии пользователей
+      .description
+        p.description__text
+          | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      .photos__list
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/320x137' width='320' height='137' alt='')
+            span.photo__flag
+              | Панорама дня
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Анна
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 5
+                  span
+                    |
+                    | минут
+                  |
+                  | назад)
+              p.photo__text
+                | Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 215
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Левон
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 5
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Вчера он на луну летал, сегодня в руки к нам попал.
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 356
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Антон
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 12
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Соседи будут рады!
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 666
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Борис
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 20
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Здесь могла быть ваша цитата о высоком и вечном.
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 215
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Сергей
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 25
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Самая кубанская в мире!
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 4
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Максим
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 40
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Где снег-то?
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 150
+        .photo
+          a.photo__img-wrap(href='#')
+            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+          .photo__bottom
+            blockquote.photo__blockquote
+              .photo__blockquote-top
+                cite.photo__author
+                  | Надежда
+                  |
+                span.photo__time
+                  | (
+                  span
+                    | 45
+                  span
+                    |
+                    | часов
+                  |
+                  | назад)
+              p.photo__text
+                | Всем GM и взаимные лайки!
+            span.photo__likes
+              | Нравится:
+              span
+                |
+                | 2560
+      .description
+        p.description__text
+          | Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      form.upload(action='#' method='post')
+        .upload__row
+          .upload__img-wrap
+            img(src='http://placehold.it/280x374' width='280' height='374' alt='')
+          .upload__control-btns
+            button.upload__control-btn(type='button')
+              img(src='http://placehold.it/48x48' width='48' height='48' alt='')
+              span.visually-hidden
+                | Обрезать
+            button.upload__control-btn(type='button')
+              img(src='http://placehold.it/48x48' width='48' height='48' alt='')
+              span.visually-hidden
+                | Залить
+            button.upload__control-btn(type='button')
+              img(src='http://placehold.it/32x32' width='32' height='32' alt='')
+              span.visually-hidden
+                | Контраст
+          .upload__range-control.range-control
+            .range-control__scale
+              .range-control__bar(style='width: 80%;')
+              .range-control__toggle
+        .upload__row
+          button.btn(type='submit')
+            | Запостить
+          button.btn(type='button')
+            | Отмена
+
+    include ../layouts/page-footer.pug
+
+    script(src='js/concatenated.js')
