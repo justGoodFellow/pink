@@ -23,7 +23,11 @@ html(lang='ru')
             a.main-nav__link(href='https://htmlacademy.ru/' target='_blank')
               | HTML Academy
 
-    h1
-      | Content
+    main
+      include ../components/promo.pug
+      include ../components/info.pug
+      include ../components/reviews.pug
+      include ../components/price-list.pug
+      include ../components/contacts.pug
 
     script(src='js/concatenated.js')
