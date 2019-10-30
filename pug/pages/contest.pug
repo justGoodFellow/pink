@@ -5,7 +5,8 @@ html(lang='ru')
     header.page-header
       .page-header__row
         a.page-header__logo.logo(href='index.html')
-          img.logo__img(src='http://placehold.it/72x22' width='75' height='22' alt='Pink')
+          svg.logo__img(width='75', height='22', aria-label='Pink')
+            use(xlink:href='img/symbols.svg#logo-pink-white-mobile')
         button.page-header__menu-toggle(type='button')
           | Переключить меню
       nav.main-nav
