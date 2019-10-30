@@ -5,7 +5,8 @@ html(lang='ru')
     header.page-header
       .page-header__row
         a.page-header__logo.logo(href='index.html')
-          img.logo__img(src='http://placehold.it/72x22' width='75' height='22' alt='Pink')
+          svg.logo__img(width='75', height='22', aria-label='Pink')
+            use(xlink:href='img/symbols.svg#logo-pink-white-mobile')
         button.page-header__menu-toggle(type='button')
           | Переключить меню
       nav.main-nav
@@ -33,7 +34,7 @@ html(lang='ru')
       .photos__list
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/320x137' width='320' height='137' alt='')
+            img(src='img/panorama-mobile@1x.jpg' width='320' height='137' alt='')
             span.photo__flag
               | Панорама дня
           .photo__bottom
@@ -60,7 +61,7 @@ html(lang='ru')
                 | 215
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-car-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -85,7 +86,7 @@ html(lang='ru')
                 | 356
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-drumset-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -110,7 +111,7 @@ html(lang='ru')
                 | 666
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-window-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -135,7 +136,7 @@ html(lang='ru')
                 | 215
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-fair-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -160,7 +161,7 @@ html(lang='ru')
                 | 4
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-pov-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -185,7 +186,7 @@ html(lang='ru')
                 | 150
         .photo
           a.photo__img-wrap(href='#')
-            img(src='http://placehold.it/280x180' width='280' height='180' alt='')
+            img(src='img/photo-wing-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
             blockquote.photo__blockquote
               .photo__blockquote-top
@@ -214,18 +215,21 @@ html(lang='ru')
       form.upload(action='#' method='post')
         .upload__row
           .upload__img-wrap
-            img(src='http://placehold.it/280x374' width='280' height='374' alt='')
+            img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
           .upload__control-btns
             button.upload__control-btn(type='button')
-              img(src='http://placehold.it/48x48' width='48' height='48' alt='')
+              svg(width='48', height='48')
+                use(xlink:href='img/symbols.svg#icon-editor-crop')
               span.visually-hidden
                 | Обрезать
             button.upload__control-btn(type='button')
-              img(src='http://placehold.it/48x48' width='48' height='48' alt='')
+              svg(width='48', height='48')
+                use(xlink:href='img/symbols.svg#icon-editor-fill')
               span.visually-hidden
                 | Залить
             button.upload__control-btn(type='button')
-              img(src='http://placehold.it/32x32' width='32' height='32' alt='')
+              svg(width='32', height='32')
+                use(xlink:href='img/symbols.svg#icon-editor-contrast')
               span.visually-hidden
                 | Контраст
           .upload__range-control.range-control
