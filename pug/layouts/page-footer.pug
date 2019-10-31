@@ -1,23 +1,27 @@
 footer.page-footer
-  a.page-footer__logo.logo(href='index.html')
-    img(src='http://placehold.it/59x39' width='59' height='39' alt='')
-    img(src='http://placehold.it/72x22' width='75' height='22' alt='')
+  a.page-footer__logo(href='index.html')
+    svg(width='147' height='40')
+      use(xlink:href='img/symbols.svg#logo-pink-blue-mobile')
     span.visually-hidden
       | Pink
   ul.page-footer__social.social
     li.social__item
       a.social__link.social__link--tw(href='#' target='_blank')
-        img(src='http://placehold.it/18x14' width='18' height='14' alt='Наш Twitter')
+        svg(width='18' height='18' aria-label='Наш Twitter')
+          use(xlink:href='img/symbols.svg#icon-twitter')
     li.social__item
       a.social__link.social__link--fb(href='#' target='_blank')
-        img(src='http://placehold.it/9x18' width='9' height='18' alt='Наш Facebook')
+        svg(width='9' height='18' aria-label='Наш Facebook')
+          use(xlink:href='img/symbols.svg#icon-facebook')
     li.social__item
       a.social__link.social__link--yt(href='#' target='_blank')
-        img(src='http://placehold.it/15x13' width='15' height='13' alt='Наш YouTube')
+        svg(width='15' height='13' aria-label='Наш YouTube')
+          use(xlink:href='img/symbols.svg#icon-youtube')
   .page-footer__copyright.copyright
     span.copyright__text
       | Разработано
     a.copyright__logo(href='https://htmlacademy.ru/intensive/adaptive' target='_blank')
-      img.copyright__logo-img(src='http://placehold.it/27x34' width='27' height='34' alt='')
+      svg.copyright__logo-img(width='27' height='34')
+        use(xlink:href='img/symbols.svg#logo-htmlacademy')
       span.visually-hidden
         | HTML Academy
