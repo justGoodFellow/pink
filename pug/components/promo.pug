@@ -2,7 +2,7 @@ section.promo
   h1.visually-hidden
     | Скачать приложение Pink
   .promo__img-wrap
-    img(src='http://placehold.it/320x462' width='320' height='462' alt='')
+    img(src='img/iphone-hand-mobile@1x.png' width='258' height='286' alt='')
   .promo__download
     a.promo__download-btn.btn(href='#')
       | Скачать приложение
@@ -11,16 +11,19 @@ section.promo
         a.download-list__link(href='#')
           span.visually-hidden
             | Скачать для iOS
-          img(src='http://placehold.it/47x56' width='47' height='56' alt='')
+          svg(width='47' height='56')
+            use(xlink:href='img/symbols.svg#logo-apple')
       li.download-list__item
         a.download-list__link(href='#')
           span.visually-hidden
             | Скачать для Android
-          img(src='http://placehold.it/43x47' width='43' height='47' alt='')
+          svg(width='43' height='47')
+            use(xlink:href='img/symbols.svg#logo-android')
       li.download-list__item
         a.download-list__link(href='#')
           span.visually-hidden
             | Скачать для Windows
-          img(src='http://placehold.it/44x41' width='44' height='41' alt='')
+          svg(width='44' height='41')
+            use(xlink:href='img/symbols.svg#logo-microsoft')
     p.promo__download-text
       | Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
