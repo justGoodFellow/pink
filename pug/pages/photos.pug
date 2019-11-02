@@ -6,9 +6,12 @@ html(lang='ru')
       .page-header__row
         a.page-header__logo.logo(href='index.html')
           svg.logo__img(width='75' height='22' aria-label='Pink')
-            use(xlink:href='img/symbols.svg#logo-pink-white-mobile')
+            use(xlink:href='img/symbols.svg#logo-pink-mobile')
         button.page-header__menu-toggle(type='button')
-          | Переключить меню
+          svg(width='24' height='24')
+            use(xlink:href='img/symbols.svg#icon-menu-cross')
+          span.visually-hidden
+            | Переключить меню
       nav.main-nav
         ul.main-nav__list
           li.main-nav__item

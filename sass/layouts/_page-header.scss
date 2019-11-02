@@ -1,1 +1,36 @@
-//
+.page-header {
+  color: white;
+
+  background-color: #283645;
+}
+
+.page-header__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  border-bottom: 1px solid black;
+}
+
+.page-header__menu-toggle {
+  @include button-reset;
+
+  cursor: pointer;
+
+  svg {
+    fill: white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    svg {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

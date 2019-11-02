@@ -1,0 +1,20 @@
+.logo__img {
+  fill: white;
+}
+
+.logo[href] {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    .logo__img {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    .logo__img {
+      opacity: 0.3;
+    }
+  }
+}
