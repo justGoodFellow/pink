@@ -1,0 +1,27 @@
+.btn {
+  @include button-reset;
+
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 14px 10px;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+
+  border: 3px solid white;
+  border-radius: 30px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+
+    background-color: white;
+  }
+
+  &:active {
+    color: rgba(#d22856, 0.3);
+  }
+}

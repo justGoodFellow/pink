@@ -1,0 +1,18 @@
+.download-list {
+  @include list-reset;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.download-list__item {
+  margin: 0 15px;
+}
+
+.download-list__link {
+  display: block;
+
+  svg {
+    display: block;
+  }
+}

@@ -6,8 +6,12 @@
 @import 'base/fonts.scss';
 @import 'base/base.scss';
 //
-@import 'layouts/page-header.scss';
-@import 'layouts/page-footer.scss';
-//
+@import 'components/btn.scss';
 @import 'components/logo.scss';
 @import 'components/main-nav.scss';
+@import 'components/download-list.scss';
+//
+@import 'layouts/page-header.scss';
+@import 'components/promo.scss';
+//
+@import 'layouts/page-footer.scss';
