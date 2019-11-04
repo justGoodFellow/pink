@@ -1,0 +1,30 @@
+.slider__toggle {
+  @include button-reset;
+
+  width: 6px;
+  height: 6px;
+  margin: 5px 10px;
+
+  background-color: #283645;
+  border-radius: 50%;
+
+  &[disabled] {
+    background-color: white;
+    box-shadow: 0 0 0 3px black;
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+    opacity: 0.3;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
