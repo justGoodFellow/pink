@@ -7,7 +7,7 @@
 }
 
 .contacts__title {
-  font-weight: 300;
+  font-weight: $light;
   font-size: 24px;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .contacts__link {
-  font-weight: 300;
+  font-weight: $light;
   font-size: 24px;
-  color: #d22856;
+  color: $pink;
   text-decoration: none;
 }

@@ -16,12 +16,12 @@
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: $pink;
 
     background-color: white;
   }
 
   &:active {
-    color: rgba(#d22856, 0.3);
+    color: rgba($pink, 0.3);
   }
 }

@@ -2,7 +2,7 @@
   padding-top: 40px;
   padding-bottom: 20px;
 
-  background-color: #f2f2f2;
+  background-color: $gray;
 }
 
 .price-list__items {
@@ -17,8 +17,8 @@
 
   color: white;
 
-  background-color: #283645;
-  border: 2px solid #e5e5e5;
+  background-color: $dark-blue;
+  border: 2px solid $gray--dark;
   border-top-width: 0;
   border-bottom-width: 0;
 }
@@ -28,7 +28,7 @@
 }
 
 .price-list__cost {
-  font-weight: 300;
+  font-weight: $light;
   font-size: 24px;
 }
 
@@ -48,7 +48,7 @@
   padding: 20px;
 
   background-color: white;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $gray--dark;
   border-top-width: 0;
 
   &:nth-child(odd) {
