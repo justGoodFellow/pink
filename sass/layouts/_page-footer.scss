@@ -1,1 +1,35 @@
-//
+.page-footer {
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 35px;
+
+  outline: none;
+
+  svg {
+    color: $dark-blue;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      color: $pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      color: $dark-blue;
+    }
+  }
+}
+
+.page-footer__social {
+  margin-bottom: 35px;
+}

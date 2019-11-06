@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0 5px;
+}
+
+.copyright__logo {
+  margin: 0 5px;
+
+  outline: none;
+
+  svg {
+    fill: $pink;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

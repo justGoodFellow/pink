@@ -1,0 +1,36 @@
+.social {
+  @include list-reset;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+
+  border: 3px solid rgba($dark-blue, 0.1);
+  border-radius: 50%;
+  outline: none;
+
+  svg {
+    fill: $pink;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border: 3px solid rgba($dark-blue, 0.1);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
