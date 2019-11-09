@@ -35,215 +35,252 @@ html(lang='ru')
         p.description__text
           | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       .photos__list
-        .photo
+        .photo.photo--big
           a.photo__img-wrap(href='#')
             img(src='img/panorama-mobile@1x.jpg' width='320' height='137' alt='')
             span.photo__flag
               | Панорама дня
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Анна
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 5
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Анна
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 5
+                    span
+                      |
+                      | минут
+                    |
+                    | назад)
+                p.photo__text
+                  | Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | минут
-                  |
-                  | назад)
-              p.photo__text
-                | Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 215
+                    | 215
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-car-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Левон
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 5
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Левон
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 5
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Вчера он на луну летал, сегодня в руки к нам попал.
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Вчера он на луну летал, сегодня в руки к нам попал.
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 356
+                    | 356
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-drumset-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Антон
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 12
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Антон
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 12
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Соседи будут рады!
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Соседи будут рады!
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 666
+                    | 666
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-window-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Борис
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 20
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Борис
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 20
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Здесь могла быть ваша цитата о высоком и вечном.
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Здесь могла быть ваша цитата о высоком и вечном.
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 215
+                    | 215
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-fair-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Сергей
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 25
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Сергей
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 25
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Самая кубанская в мире!
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Самая кубанская в мире!
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 4
+                    | 4
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-pov-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Максим
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 40
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Максим
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 40
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Где снег-то?
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Где снег-то?
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 150
+                    | 150
         .photo
           a.photo__img-wrap(href='#')
             img(src='img/photo-wing-mobile@1x.jpg' width='280' height='180' alt='')
           .photo__bottom
-            blockquote.photo__blockquote
-              .photo__blockquote-top
-                cite.photo__author
-                  | Надежда
-                  |
-                span.photo__time
-                  | (
-                  span
-                    | 45
+            .photo__bottom-container
+              blockquote.photo__blockquote
+                .photo__blockquote-top
+                  cite.photo__author
+                    | Надежда
+                    |
+                  span.photo__time
+                    | (
+                    span
+                      | 45
+                    span
+                      |
+                      | часов
+                    |
+                    | назад)
+                p.photo__text
+                  | Всем GM и взаимные лайки!
+              .photo__likes
+                button.photo__like-btn(type='button')
+                  svg(width='13' height='12')
+                    use(xlink:href='img/symbols.svg#icon-heart')
+                span
+                  | Нравится:
                   span
                     |
-                    | часов
-                  |
-                  | назад)
-              p.photo__text
-                | Всем GM и взаимные лайки!
-            span.photo__likes
-              | Нравится:
-              span
-                |
-                | 2560
+                    | 2560
       .description
         p.description__text
           | Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       form.upload(action='#' method='post')
         .upload__row
-          .upload__img-wrap
-            img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
-          .upload__control-btns
-            button.upload__control-btn(type='button')
-              svg(width='48', height='48')
-                use(xlink:href='img/symbols.svg#icon-editor-crop')
-              span.visually-hidden
-                | Обрезать
-            button.upload__control-btn(type='button')
-              svg(width='48', height='48')
-                use(xlink:href='img/symbols.svg#icon-editor-fill')
-              span.visually-hidden
-                | Залить
-            button.upload__control-btn(type='button')
-              svg(width='32', height='32')
-                use(xlink:href='img/symbols.svg#icon-editor-contrast')
-              span.visually-hidden
-                | Контраст
-          .upload__range-control.range-control
-            .range-control__scale
-              .range-control__bar(style='width: 80%;')
-              .range-control__toggle
+          .upload__container
+            .upload__img-wrap
+              img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
+            .upload__control-btns
+              button.upload__control-btn(type='button' disabled)
+                svg(width='48', height='48')
+                  use(xlink:href='img/symbols.svg#icon-editor-crop')
+                span.visually-hidden
+                  | Обрезать
+              button.upload__control-btn(type='button')
+                svg(width='48', height='43')
+                  use(xlink:href='img/symbols.svg#icon-editor-fill')
+                span.visually-hidden
+                  | Залить
+              button.upload__control-btn(type='button')
+                svg(width='32', height='32')
+                  use(xlink:href='img/symbols.svg#icon-editor-contrast')
+                span.visually-hidden
+                  | Контраст
+            .upload__range-control.range-control
+              .range-control__scale
+                .range-control__bar(style='width: 80%;')
+                .range-control__toggle
         .upload__row
-          button.btn(type='submit')
-            | Запостить
-          button.btn(type='button')
-            | Отмена
+          .upload__container
+            button.upload__bottom-btn.btn.btn--pink(type='submit')
+              | Запостить
+            button.upload__bottom-btn.btn.btn--gray(type='button')
+              | Отмена
 
     include ../layouts/page-footer.pug
 

@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 236px;
+  padding: 20px;
+
+  text-align: center;
+  color: white;
+
+  background-color: $dark-blue;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.hero__title {
+  font-weight: $light;
+  font-size: 24px;
+}

@@ -1,0 +1,60 @@
+.upload {
+  background-color: $gray;
+}
+
+.upload__row {
+  padding: 20px;
+
+  border-bottom: 1px solid rgba($dark-blue, 0.1);
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.upload__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.upload__control-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.upload__control-btn {
+  @include button-reset;
+
+  margin: 0 20px;
+
+  svg {
+    display: block;
+
+    fill: #b5b9be;
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      svg {
+        fill: #8d949b;
+      }
+    }
+  }
+
+  &[disabled] {
+    svg {
+      fill: $pink;
+    }
+  }
+}
+
+.upload__bottom-btn {
+  margin-bottom: 10px;
+}

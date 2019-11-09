@@ -12,16 +12,54 @@
 
   border: 3px solid white;
   border-radius: 30px;
-  outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     color: $pink;
 
     background-color: white;
+    outline: none;
   }
 
   &:active {
     color: rgba($pink, 0.3);
+  }
+
+  &--pink {
+    color: $pink;
+
+    border-color: $pink;
+
+    &:hover,
+    &:focus {
+      color: white;
+
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+    }
+  }
+
+  &--gray {
+    color: $dark-blue;
+
+    border-color: $dark-blue;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      color: $dark-blue;
+
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+
+      background-color: $dark-blue;
+    }
   }
 }

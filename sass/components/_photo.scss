@@ -1,0 +1,93 @@
+.photo {
+  padding: 0 20px;
+
+  &--big {
+    padding: 0;
+  }
+}
+
+.photo__img-wrap {
+  position: relative;
+
+  display: block;
+  width: 280px;
+
+  text-decoration: none;
+
+  img {
+    display: block;
+  }
+}
+
+.photo--big .photo__img-wrap {
+  width: 320px;
+}
+
+.photo__flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 10px 20px;
+
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: $pink;
+}
+
+.photo--big .photo__flag {
+  right: 20px;
+}
+
+.photo--big .photo__bottom {
+  padding: 0 20px;
+}
+
+.photo__bottom-container {
+  padding: 18px;
+
+  background-color: $gray;
+}
+
+.photo__blockquote {
+  margin: 0;
+}
+
+.photo__author {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photo__time {
+  font-weight: $light;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  line-height: 24px;
+}
+
+.photo__likes {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.photo__like-btn {
+  @include button-reset;
+
+  margin-right: 20px;
+
+  cursor: pointer;
+
+  svg {
+    fill: $pink;
+  }
+}
