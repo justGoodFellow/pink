@@ -1,0 +1,62 @@
+.radiobox {
+  margin-bottom: 40px;
+}
+
+.radiobox__input {
+  @include visually-hidden;
+}
+
+.radiobox__label {
+  position: relative;
+
+  display: block;
+  padding: 5px 0;
+  padding-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $gray--dark;
+  }
+
+  &:hover {
+    &::before {
+      box-shadow: 0 0 0 2px $dark-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      box-shadow: 0 0 0 2px $pink;
+    }
+  }
+}
+
+.radiobox__input:focus + .radiobox__label {
+  &::before {
+    box-shadow: 0 0 0 2px $dark-blue;
+  }
+}
+
+.radiobox__input:checked + .radiobox__label {
+  &::before {
+    background-color: $pink;
+  }
+}

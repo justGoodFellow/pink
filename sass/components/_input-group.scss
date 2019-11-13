@@ -1,0 +1,17 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group__label {
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  color: $pink;
+  text-transform: uppercase;
+
+  &--center {
+    text-align: center;
+  }
+}

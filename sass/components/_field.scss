@@ -1,0 +1,31 @@
+.field {
+  padding: 15px 20px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+
+  border: 2px solid $gray--dark;
+  border-radius: 3px;
+
+  resize: none;
+
+  &::placeholder {
+    color: $dark-blue;
+
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
+textarea.field {
+  box-sizing: border-box;
+  height: 200px;
+}

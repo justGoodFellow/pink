@@ -1,0 +1,62 @@
+.checkbox {
+  margin-bottom: 40px;
+}
+
+.checkbox__input {
+  @include visually-hidden;
+}
+
+.checkbox__label {
+  position: relative;
+
+  display: block;
+  padding: 5px 0;
+  padding-left: 70px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 39px;
+    height: 39px;
+
+    border: 2px solid $gray--dark;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $dark-blue;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
+  }
+}
+
+.checkbox__input:focus + .checkbox__label {
+  &::before {
+    border-color: $dark-blue;
+  }
+}
+
+.checkbox__input:checked + .checkbox__label {
+  &::before {
+    background-image: url('../img/icon-yes-pink.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
