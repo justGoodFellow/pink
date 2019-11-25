@@ -3,8 +3,6 @@
 }
 
 .upload__row {
-  padding: 20px;
-
   border-bottom: 1px solid rgba($dark-blue, 0.1);
 
   &:last-child {
@@ -13,8 +11,9 @@
 }
 
 .upload__container {
-  width: 320px;
-  margin: 0 auto;
+  @include container;
+
+  padding: 20px;
 }
 
 .upload__control-btns {
