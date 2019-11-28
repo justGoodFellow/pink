@@ -3,29 +3,30 @@ html(lang='ru')
   include ../layouts/head.pug
   body
     header.page-header
-      .page-header__row
-        a.page-header__logo.logo(href='index.html')
-          svg.logo__img(width='75' height='22' aria-label='Pink')
-            use(xlink:href='img/symbols.svg#logo-pink-mobile')
-        button.page-header__menu-toggle(type='button')
-          svg(width='24' height='24')
-            use(xlink:href='img/symbols.svg#icon-menu-cross')
-          span.visually-hidden
-            | Переключить меню
-      nav.main-nav
-        ul.main-nav__list
-          li.main-nav__item
-            a.main-nav__link(href='index.html')
-              | Главная
-          li.main-nav__item
-            a.main-nav__link(href='photos.html')
-              | Фотографии
-          li.main-nav__item
-            a.main-nav__link
-              | Конкурс
-          li.main-nav__item
-            a.main-nav__link(href='https://htmlacademy.ru/' target='_blank')
-              | HTML Academy
+      .page-header__container
+        .page-header__row
+          a.page-header__logo.logo(href='index.html')
+            svg.logo__img(width='75' height='22' aria-label='Pink')
+              use(xlink:href='img/symbols.svg#logo-pink-mobile')
+          button.page-header__menu-toggle(type='button')
+            svg(width='24' height='24')
+              use(xlink:href='img/symbols.svg#icon-menu-cross')
+            span.visually-hidden
+              | Переключить меню
+        nav.main-nav
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link(href='index.html')
+                | Главная
+            li.main-nav__item
+              a.main-nav__link(href='photos.html')
+                | Фотографии
+            li.main-nav__item
+              a.main-nav__link
+                | Конкурс
+            li.main-nav__item
+              a.main-nav__link(href='https://htmlacademy.ru/' target='_blank')
+                | HTML Academy
 
     main
       .hero
