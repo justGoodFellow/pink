@@ -2,26 +2,80 @@
   color: white;
 
   background-color: #1d2631;
-}
-
-.promo__img-wrap {
-  display: flex;
-  align-items: flex-end;
-  width: 320px;
-  min-height: 460px;
-  margin: 0 auto;
-
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (max-width: $tablet-width - 1) {
+    padding-top: 175px;
+  }
+}
+
+.promo__container {
+  @include container;
+
+  position: relative;
+
+  min-height: 460px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
+
+.promo__img-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
 }
 
 .promo__download {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  padding: 25px 20px;
+  position: relative;
+
+  padding: 25px 0;
 
   text-align: center;
+
+  @media (max-width: $tablet-width - 1) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+.promo__column {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.promo__title {
+  margin: 30px 0;
+
+  @media (max-width: $tablet-width - 1) {
+    display: none;
+  }
+}
+
+.promo__title-text {
+  font-weight: $light;
+  font-size: 40px;
 }
 
 .promo__download-list {

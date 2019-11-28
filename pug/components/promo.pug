@@ -1,29 +1,36 @@
 section.promo
-  h1.visually-hidden
-    | Скачать приложение Pink
-  .promo__img-wrap
-    img(src='img/iphone-hand-mobile@1x.png' width='258' height='286' alt='')
-  .promo__download
-    a.promo__download-btn.btn(href='#')
-      | Скачать приложение
-    ul.promo__download-list.download-list
-      li.download-list__item
-        a.download-list__link(href='#')
-          span.visually-hidden
-            | Скачать для iOS
-          svg(width='47' height='56')
-            use(xlink:href='img/symbols.svg#logo-apple')
-      li.download-list__item
-        a.download-list__link(href='#')
-          span.visually-hidden
-            | Скачать для Android
-          svg(width='43' height='47')
-            use(xlink:href='img/symbols.svg#logo-android')
-      li.download-list__item
-        a.download-list__link(href='#')
-          span.visually-hidden
-            | Скачать для Windows
-          svg(width='44' height='41')
-            use(xlink:href='img/symbols.svg#logo-microsoft')
-    p.promo__download-text
-      | Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+  .promo__container
+    h1.visually-hidden
+      | Скачать приложение Pink
+    .promo__img-container
+      img.promo__img(src='img/iphone-hand-mobile@1x.png' width='258' height='286' alt='')
+    .promo__download
+      .promo__column
+        p.promo__title
+          b.promo__title-text
+            | Взгляните
+            br
+            | на жизнь иначе!
+        a.promo__download-btn.btn.btn--fluid(href='#')
+          | Скачать приложение
+        ul.promo__download-list.download-list
+          li.download-list__item
+            a.download-list__link(href='#')
+              span.visually-hidden
+                | Скачать для iOS
+              svg(width='47' height='56')
+                use(xlink:href='img/symbols.svg#logo-apple')
+          li.download-list__item
+            a.download-list__link(href='#')
+              span.visually-hidden
+                | Скачать для Android
+              svg(width='43' height='47')
+                use(xlink:href='img/symbols.svg#logo-android')
+          li.download-list__item
+            a.download-list__link(href='#')
+              span.visually-hidden
+                | Скачать для Windows
+              svg(width='44' height='41')
+                use(xlink:href='img/symbols.svg#logo-microsoft')
+        p.promo__download-text
+          | Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
