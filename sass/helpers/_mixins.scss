@@ -1,7 +1,23 @@
 @mixin container {
   box-sizing: border-box;
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@mixin container-tablet {
+  @include container;
+
+  width: $tablet-width;
+}
+
+@mixin container-desktop {
+  @include container-tablet;
+
+  width: $desktop-width;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 @mixin visually-hidden {
