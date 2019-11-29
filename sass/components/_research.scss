@@ -1,0 +1,46 @@
+.research {
+  @media (max-width: $tablet-width - 1) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray;
+  }
+}
+
+.research__container {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
+
+.research__column {
+  width: 310px;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-width: 370px;
+  }
+}
+
+.research__title {
+  font-size: 30px;
+  color: black;
+}
+
+.research__desctiprion {
+  line-height: 24px;
+}
+
+.research__link {
+  color: $pink;
+}
