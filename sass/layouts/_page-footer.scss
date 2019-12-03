@@ -1,14 +1,38 @@
 .page-footer {
-  padding: 40px 20px;
-
   text-align: center;
+}
+
+.page-footer__container {
+  @include container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 35px;
 
   outline: none;
+
+  @media (max-width: $tablet-width - 1) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
 
   svg {
     color: $dark-blue;
@@ -31,5 +55,17 @@
 }
 
 .page-footer__social {
-  margin-bottom: 35px;
+  @media (max-width: $tablet-width - 1) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
 }
