@@ -1,3 +1,61 @@
+.slider__container {
+  @include container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
+
+.slider__row {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.slider__arrow {
+  @include button-reset;
+
+  cursor: pointer;
+
+  @media (max-width: $desktop-width - 1) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .slider__arrow-icon {
+      opacity: 0.6;
+
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    .slider__arrow-icon {
+      opacity: 0.1;
+
+      fill: $dark-blue;
+    }
+  }
+}
+
+.slider__arrow-icon {
+  fill: #b2b2b2;
+}
+
+.slider__arrow--right .slider__arrow-icon {
+  transform: rotate(180deg);
+}
+
 .slider__toggle {
   @include button-reset;
 
@@ -7,6 +65,10 @@
 
   background-color: $dark-blue;
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &[disabled] {
     background-color: white;

@@ -1,27 +1,47 @@
 section.reviews.slider
-  .reviews__items.slider__items
-    blockquote.reviews__item.slider__item
-      cite.reviews__author-name
-        | Николай Петров
-      p.reviews__text
-        | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-    blockquote.reviews__item.slider__item
-      cite.reviews__author-name
-        | Николай Петров
-      p.reviews__text
-        | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-    blockquote.reviews__item.slider__item
-      cite.reviews__author-name
-        | Николай Петров
-      p.reviews__text
-        | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-  .reviews__toggles.slider__toggles
-    button.slider__toggle(type='button' disabled)
-      span.visually-hidden
-        | 1
-    button.slider__toggle(type='button')
-      span.visually-hidden
-        | 2
-    button.slider__toggle(type='button')
-      span.visually-hidden
-        | 3
+  .slider__container
+    h2.visually-hidden
+      | Отзывы
+    .slider__row
+      button.slider__arrow.slider__arrow--left(type='button')
+        svg.slider__arrow-icon(width='22' height='41')
+          use(xlink:href='img/symbols.svg#icon-arrow')
+        span.visually-hidden
+          | Предыдущий
+      .reviews__items.slider__items
+        blockquote.reviews__item.slider__item
+          p.reviews__text
+            | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          cite.reviews__author-name
+            | Николай Петров
+          p.reviews__author-desc
+            | 25 лет, водитель трамвая
+        blockquote.reviews__item.slider__item
+          p.reviews__text
+            | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          cite.reviews__author-name
+            | Николай Петров
+          p.reviews__author-desc
+            | 25 лет, водитель трамвая
+        blockquote.reviews__item.slider__item
+          p.reviews__text
+            | «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          cite.reviews__author-name
+            | Николай Петров
+          p.reviews__author-desc
+            | 25 лет, водитель трамвая
+      button.slider__arrow.slider__arrow--right(type='button')
+        svg.slider__arrow-icon(width='22' height='41')
+          use(xlink:href='img/symbols.svg#icon-arrow')
+        span.visually-hidden
+          | Следующий
+    .reviews__toggles.slider__toggles
+      button.slider__toggle(type='button' disabled)
+        span.visually-hidden
+          | 1
+      button.slider__toggle(type='button')
+        span.visually-hidden
+          | 2
+      button.slider__toggle(type='button')
+        span.visually-hidden
+          | 3

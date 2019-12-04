@@ -1,11 +1,19 @@
 .reviews {
-  padding: 40px 20px;
-
   text-align: center;
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 100px;
+  }
+}
+
+.reviews__text {
+  line-height: 30px;
 }
 
 .reviews__author-name {
@@ -13,8 +21,14 @@
   font-size: 18px;
   color: black;
   font-style: normal;
+
+  @media (max-width: $tablet-width - 1) {
+    order: -1;
+  }
 }
 
-.reviews__text {
-  line-height: 30px;
+.reviews__author-desc {
+  @media (max-width: $tablet-width - 1) {
+    display: none;
+  }
 }
