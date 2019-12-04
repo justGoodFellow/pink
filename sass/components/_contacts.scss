@@ -3,7 +3,15 @@
 }
 
 .contacts__container {
-  padding: 20px;
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .contacts__title {
@@ -13,6 +21,20 @@
 
 .contacts__address {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.contacts__group {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0 20px;
+  }
 }
 
 .contacts__group-title {
