@@ -1,95 +1,115 @@
 section.price-list
   h2.visually-hidden
     | Цены
-  table.price-list__items
-    tr
-      th(colspan='2')
-        span.price-list__item-name
-          | Стандарт
-        br
-        span.price-list__cost
-          | 3,99 USD
-      th(colspan='2')
-        span.price-list__item-name
-          | Стандарт
-        br
-        span.price-list__cost
-          | 3,99 USD
-        span.price-list__hit
+  .price-list__container
+    table.price-list__items
+      tr
+        th
+        th(colspan='2')
+          span.price-list__item-name
+            | База
+          br
+          span.price-list__cost
+            | 1,99 USD
+        th(colspan='2')
+          span.price-list__item-name
+            | Стандарт
+          br
+          span.price-list__cost
+            | 3,99 USD
+          span.price-list__hit
+            span.visually-hidden
+              | Хит
+        th(colspan='2')
+          span.price-list__item-name
+            | Анлим
+          br
+          span.price-list__cost
+            | 9,99 USD
+      tr
+        td.price-list__category-name
+          span
+            | Розовый фильтр
+        td.price-list__category-name
+          span
+            | Розовый фильтр
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
           span.visually-hidden
-            | Хит
-      th(colspan='2')
-        span.price-list__item-name
-          | Стандарт
-        br
-        span.price-list__cost
-          | 3,99 USD
-    tr
-      td.price-list__category-name
-        | Розовый фильтр
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-      td.price-list__category-name
-        | Розовый фильтр
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-      td.price-list__category-name
-        | Розовый фильтр
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-    tr
-      td.price-list__category-name
-        | Смайлики
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-      td.price-list__category-name
-        | Смайлики
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-      td.price-list__category-name
-        | Смайлики
-      td
-        svg(width='31' height='21')
-          use(xlink:href='img/symbols.svg#icon-yes')
-        span.visually-hidden
-          | Да
-    tr
-      td.price-list__category-name
-        | Комментарии
-      td
-        svg(width='27' height='26')
-          use(xlink:href='img/symbols.svg#icon-no')
-        span.visually-hidden
-          | Нет
-      td.price-list__category-name
-        | Комментарии
-      td
-        svg(width='27' height='26')
-          use(xlink:href='img/symbols.svg#icon-no')
-        span.visually-hidden
-          | Нет
-      td.price-list__category-name
-        | Комментарии
-      td
-        svg(width='27' height='26')
-          use(xlink:href='img/symbols.svg#icon-no')
-        span.visually-hidden
-          | Нет
+            | Да
+        td.price-list__category-name
+          span
+            | Розовый фильтр
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
+          span.visually-hidden
+            | Да
+        td.price-list__category-name
+          span
+            | Розовый фильтр
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
+          span.visually-hidden
+            | Да
+      tr
+        td.price-list__category-name
+          span
+            | Смайлики
+        td.price-list__category-name
+          span
+            | Смайлики
+        td.price-list__category-status
+          svg(width='27' height='27')
+            use(xlink:href='img/symbols.svg#icon-no')
+          span.visually-hidden
+            | Нет
+        td.price-list__category-name
+          span
+            | Смайлики
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
+          span.visually-hidden
+            | Да
+        td.price-list__category-name
+          span
+            | Смайлики
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
+          span.visually-hidden
+            | Да
+      tr
+        td.price-list__category-name
+          span
+            | Комментарии
+        td.price-list__category-name
+          span
+            | Комментарии
+        td.price-list__category-status
+          svg(width='27' height='27')
+            use(xlink:href='img/symbols.svg#icon-no')
+          span.visually-hidden
+            | Нет
+        td.price-list__category-name
+          span
+            | Комментарии
+        td.price-list__category-status
+          svg(width='27' height='27')
+            use(xlink:href='img/symbols.svg#icon-no')
+          span.visually-hidden
+            | Нет
+        td.price-list__category-name
+          span
+            | Комментарии
+        td.price-list__category-status
+          svg(width='31' height='21')
+            use(xlink:href='img/symbols.svg#icon-yes')
+          span.visually-hidden
+            | Да
   .price-list__toggles.slider__toggles
     button.slider__toggle(type='button')
       span.visually-hidden

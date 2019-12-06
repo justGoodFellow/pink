@@ -5,6 +5,10 @@
   background-color: $gray;
 }
 
+.price-list__container {
+  overflow-x: scroll;
+}
+
 .price-list__items {
   margin: 0 auto;
 
@@ -13,6 +17,8 @@
 }
 
 .price-list th {
+  box-sizing: border-box;
+  min-width: 280px;
   padding: 15px;
 
   color: white;
@@ -21,6 +27,28 @@
   border: 2px solid $gray--dark;
   border-top-width: 0;
   border-bottom-width: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 230px;
+  }
+
+  &:first-child {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.price-list__items th,
+.price-list__items td {
+  &:first-child {
+    @media (max-width: $tablet-width - 1) {
+      display: none;
+    }
+  }
 }
 
 .price-list__item-name {
@@ -45,14 +73,56 @@
 // }
 
 .price-list td {
-  padding: 20px;
+  box-sizing: border-box;
 
   background-color: white;
   border: 2px solid $gray--dark;
   border-top-width: 0;
 
-  &:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  &:nth-child(even) {
     border-right-color: transparent;
+  }
+}
+
+.price-list__items tr:nth-child(2) td:first-child {
+  border-top-width: 2px;
+}
+
+.price-list__category-name {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    span {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      padding: 5px 15px;
+
+      text-align: left;
+      text-transform: none;
+
+      span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.price-list__category-status {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 45px;
+    padding: 5px 15px;
   }
 }
 
