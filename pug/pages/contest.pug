@@ -34,8 +34,9 @@ html(lang='ru')
           h1.hero__title
             | Конкурс на самое безбашенное путешествие с Пинк
       .description
-        p.description__text
-          | Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        .description__container
+          p.description__text
+            | Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       form.contest__form.form(action='#' method='post')
         .form__row
           fieldset.form__fieldset

@@ -36,8 +36,9 @@ html(lang='ru')
             br
             | пользователей
       .description
-        p.description__text
-          | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        .description__container
+          p.description__text
+            | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       .photos__list
         .photo.photo--big
           a.photo__img-wrap(href='#')
@@ -252,8 +253,11 @@ html(lang='ru')
                     |
                     | 2560
       .description
-        p.description__text
-          | Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        .description__container
+          p.description__text
+            | Затмите их всех!
+            br
+            | Выкладывайте все, что накопилось в телефоне!
       form.upload(action='#' method='post')
         .upload__row
           .upload__container

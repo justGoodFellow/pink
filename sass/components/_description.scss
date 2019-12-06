@@ -1,8 +1,34 @@
 .description {
   text-align: center;
-  padding: 20px;
+}
+
+.description__container {
+  @include container;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 170px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+
+    min-height: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .description__text {
+  margin: 15px 0;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 65px;
+  }
 }
