@@ -1,11 +1,4 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  min-height: 236px;
-  padding: 20px;
-
   text-align: center;
   color: white;
 
@@ -13,6 +6,28 @@
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.hero__container {
+  @include container;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 236px;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+
+    min-height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+
+    min-height: 400px;
+  }
 }
 
 .hero__title {
