@@ -1,8 +1,18 @@
 .photo {
-  padding: 0 20px;
+  // padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
 
   &--big {
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+    }
   }
 }
 
@@ -14,13 +24,34 @@
 
   text-decoration: none;
 
-  img {
-    display: block;
+  background-color: #777777;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
 
 .photo--big .photo__img-wrap {
-  width: 320px;
+  width: auto;
+}
+
+.photo__container {
+  @include container;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .photo__flag {
@@ -40,20 +71,50 @@
 
 .photo--big .photo__flag {
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10px;
+  }
 }
 
-.photo--big .photo__bottom {
-  padding: 0 20px;
+.photo__img {
+  display: block;
 }
 
-.photo__bottom-container {
+.photo--big .photo__img {
+  margin: 0 auto;
+}
+
+// .photo--big .photo__info {
+//   padding: 0 20px;
+// }
+
+.photo__info {
   padding: 18px;
 
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
 }
 
-.photo__blockquote {
-  margin: 0;
+.photo--big .photo__info {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.photo__info-header {
+  margin-top: 0;
 }
 
 .photo__author {
@@ -67,8 +128,17 @@
   text-transform: uppercase;
 }
 
-.photo__text {
+.photo__blockquote {
+  margin: 0;
+  margin-bottom: 15px;
+
   line-height: 24px;
+}
+
+.photo--big .photo__blockquote {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .photo__likes {
@@ -78,6 +148,18 @@
   font-size: 12px;
   color: $pink;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+}
+
+.photo--big .photo__likes {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: auto;
+  }
 }
 
 .photo__like-btn {
@@ -87,7 +169,20 @@
 
   cursor: pointer;
 
-  svg {
-    fill: $pink;
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 0;
+  }
+}
+
+.photo__heart-icon {
+  display: block;
+
+  fill: $pink;
+}
+
+.photo--big .photo__heart-icon {
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
   }
 }

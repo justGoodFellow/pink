@@ -39,219 +39,207 @@ html(lang='ru')
         .description__container
           p.description__text
             | Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      .photos__list
-        .photo.photo--big
-          a.photo__img-wrap(href='#')
-            img(src='img/panorama-mobile@1x.jpg' width='320' height='137' alt='')
+      .photo.photo--big
+        a.photo__img-wrap(href='#')
+          .photo__container
             span.photo__flag
               | Панорама дня
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Анна
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 5
-                    span
-                      |
-                      | минут
-                    |
-                    | назад)
-                p.photo__text
-                  | Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+          img.photo__img(src='img/panorama-mobile@1x.jpg' width='320' height='137' alt='')
+        .photo__container
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Анна
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 215
+                  | 5
+                span
+                  |
+                  | минут
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 215
+      .photos__list
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-car-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Левон
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 5
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Вчера он на луну летал, сегодня в руки к нам попал.
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-car-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Левон
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 356
+                  | 5
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Вчера он на луну летал, сегодня в руки к нам попал.
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 356
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-drumset-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Антон
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 12
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Соседи будут рады!
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-drumset-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Антон
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 666
+                  | 12
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Соседи будут рады!
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 666
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-window-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Борис
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 20
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Здесь могла быть ваша цитата о высоком и вечном.
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-window-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Борис
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 215
+                  | 20
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Здесь могла быть ваша цитата о высоком и вечном.
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 215
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-fair-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Сергей
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 25
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Самая кубанская в мире!
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-fair-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Сергей
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 4
+                  | 25
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Самая кубанская в мире!
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 4
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-pov-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Максим
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 40
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Где снег-то?
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-pov-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Максим
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 150
+                  | 40
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Где снег-то?
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 150
         .photo
           a.photo__img-wrap(href='#')
-            img(src='img/photo-wing-mobile@1x.jpg' width='280' height='180' alt='')
-          .photo__bottom
-            .photo__bottom-container
-              blockquote.photo__blockquote
-                .photo__blockquote-top
-                  cite.photo__author
-                    | Надежда
-                    |
-                  span.photo__time
-                    | (
-                    span
-                      | 45
-                    span
-                      |
-                      | часов
-                    |
-                    | назад)
-                p.photo__text
-                  | Всем GM и взаимные лайки!
-              .photo__likes
-                button.photo__like-btn(type='button')
-                  svg(width='13' height='12')
-                    use(xlink:href='img/symbols.svg#icon-heart')
+            img.photo__img(src='img/photo-wing-mobile@1x.jpg' width='280' height='180' alt='')
+          .photo__info
+            p.photo__info-header
+              cite.photo__author
+                | Надежда
+                |
+              time.photo__time(datetime='2018-07-07T20:00:00')
+                | (
                 span
-                  | Нравится:
-                  span
-                    |
-                    | 2560
+                  | 45
+                span
+                  |
+                  | часов
+                |
+                | назад)
+            blockquote.photo__blockquote
+              | Всем GM и взаимные лайки!
+            .photo__likes
+              button.photo__like-btn(type='button')
+                svg.photo__heart-icon(width='13' height='12')
+                  use(xlink:href='img/symbols.svg#icon-heart')
+              span
+                | Нравится:
+                span
+                  |
+                  | 2560
       .description
         .description__container
           p.description__text

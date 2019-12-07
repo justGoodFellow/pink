@@ -1,5 +1,45 @@
 .photos {
   .photo {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+
+      @media (max-width: $desktop-width - 1) {
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 25px;
+      margin-bottom: 25px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    &--big {
+      @media (min-width: $tablet-width) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.photos__list {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    @include container-tablet;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
   }
 }
