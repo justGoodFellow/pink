@@ -246,37 +246,7 @@ html(lang='ru')
             | Затмите их всех!
             br
             | Выкладывайте все, что накопилось в телефоне!
-      form.upload(action='#' method='post')
-        .upload__row
-          .upload__container
-            .upload__img-wrap
-              img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
-            .upload__control-btns
-              button.upload__control-btn(type='button' disabled)
-                svg(width='48', height='48')
-                  use(xlink:href='img/symbols.svg#icon-editor-crop')
-                span.visually-hidden
-                  | Обрезать
-              button.upload__control-btn(type='button')
-                svg(width='48', height='43')
-                  use(xlink:href='img/symbols.svg#icon-editor-fill')
-                span.visually-hidden
-                  | Залить
-              button.upload__control-btn(type='button')
-                svg(width='32', height='32')
-                  use(xlink:href='img/symbols.svg#icon-editor-contrast')
-                span.visually-hidden
-                  | Контраст
-            .upload__range-control.range-control
-              .range-control__scale
-                .range-control__bar(style='width: 80%;')
-                .range-control__toggle
-        .upload__row
-          .upload__container
-            button.upload__bottom-btn.btn.btn--pink(type='submit')
-              | Запостить
-            button.upload__bottom-btn.btn.btn--gray(type='button')
-              | Отмена
+      include ../components/upload.pug
 
     include ../layouts/page-footer.pug
 

@@ -1,0 +1,35 @@
+form.upload(action='#' method='post')
+  .upload__container
+    .upload__inner
+      .upload__column.upload__column--first
+        .upload__img-wrap
+          img.upload__img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
+      .upload__column.upload__column--second
+        .upload__controls
+          .upload__control
+            button.upload__control-btn(type='button' disabled)
+              svg.upload__control-icon(width='48', height='48')
+                use(xlink:href='img/symbols.svg#icon-editor-crop')
+              span.visually-hidden
+                | Обрезать
+          .upload__control
+            button.upload__control-btn(type='button')
+              svg.upload__control-icon(width='48', height='43')
+                use(xlink:href='img/symbols.svg#icon-editor-fill')
+              span.visually-hidden
+                | Залить
+          .upload__control
+            button.upload__control-btn(type='button')
+              svg.upload__control-icon(width='32', height='32')
+                use(xlink:href='img/symbols.svg#icon-editor-contrast')
+              span.visually-hidden
+                | Контраст
+        .upload__range-control.range-control
+          .range-control__scale
+            .range-control__bar(style='width: 80%;')
+            .range-control__toggle
+        .upload__bottom-btns
+          button.upload__bottom-btn.btn.btn--pink(type='submit')
+            | Запостить
+          button.upload__bottom-btn.btn.btn--gray(type='button')
+            | Отмена
