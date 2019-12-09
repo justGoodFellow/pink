@@ -3,7 +3,7 @@
 
   display: inline-block;
   box-sizing: border-box;
-  width: 280px;
+  width: 100%;
   padding: 14px 10px;
 
   font-weight: bold;
@@ -38,15 +38,17 @@
 
     border-color: $pink;
 
-    &:hover,
-    &:focus {
-      color: white;
+    &:not([disabled]) {
+      &:hover,
+      &:focus {
+        color: white;
 
-      background-color: $pink;
-    }
+        background-color: $pink;
+      }
 
-    &:active {
-      color: rgba(white, 0.3);
+      &:active {
+        color: rgba(white, 0.3);
+      }
     }
   }
 
@@ -56,17 +58,19 @@
     border-color: $dark-blue;
     opacity: 0.1;
 
-    &:hover,
-    &:focus {
-      color: $dark-blue;
+    &:not([disabled]) {
+      &:hover,
+      &:focus {
+        color: $dark-blue;
 
-      opacity: 0.3;
-    }
+        opacity: 0.3;
+      }
 
-    &:active {
-      color: rgba(white, 0.3);
+      &:active {
+        color: rgba(white, 0.3);
 
-      background-color: $dark-blue;
+        background-color: $dark-blue;
+      }
     }
   }
 
