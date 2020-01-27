@@ -21,6 +21,7 @@
 
   display: block;
   width: 280px;
+  overflow: hidden;
 
   text-decoration: none;
 
@@ -38,6 +39,12 @@
 
 .photo--big .photo__img-wrap {
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    // height: auto;
+    // max-height: 506px;
+    height: 506px;
+  }
 }
 
 .photo__container {
@@ -87,6 +94,12 @@
 
 .photo--big .photo__img {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 506px;
+
+    object-fit: cover;
+  }
 }
 
 // .photo--big .photo__info {
