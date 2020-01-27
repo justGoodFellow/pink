@@ -3,24 +3,26 @@ form.upload(action='#' method='post')
     .upload__inner
       .upload__column.upload__column--first
         .upload__img-wrap
-          img.upload__img(src='img/photo-road-mobile@1x.jpg' width='280' height='374' alt='')
+          picture
+            source(media='(min-width: 660px)' srcset='img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x')
+            img.upload__img(src='img/photo-road-mobile@1x.jpg' srcset='img/photo-road-mobile@2x.jpg 2x' alt='')
       .upload__column.upload__column--second
         .upload__controls
           .upload__control
             button.upload__control-btn(type='button' disabled)
-              svg.upload__control-icon(width='48', height='48')
+              svg.upload__control-icon(width='48' height='48')
                 use(xlink:href='img/symbols.svg#icon-editor-crop')
               span.visually-hidden
                 | Обрезать
           .upload__control
             button.upload__control-btn(type='button')
-              svg.upload__control-icon(width='48', height='43')
+              svg.upload__control-icon(width='48' height='43')
                 use(xlink:href='img/symbols.svg#icon-editor-fill')
               span.visually-hidden
                 | Залить
           .upload__control
             button.upload__control-btn(type='button')
-              svg.upload__control-icon(width='32', height='32')
+              svg.upload__control-icon(width='32' height='32')
                 use(xlink:href='img/symbols.svg#icon-editor-contrast')
               span.visually-hidden
                 | Контраст
