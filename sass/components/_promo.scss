@@ -65,10 +65,16 @@
 }
 
 .promo__img {
+  display: block;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 20px;
     bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10px;
   }
 }
 
