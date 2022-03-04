@@ -120,22 +120,22 @@
 .upload__control-btn {
   @include button-reset;
 
-  &:not([disabled]) {
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      outline: none;
-
-      .upload__control-icon {
-        fill: #8d949b;
-      }
-    }
-  }
-
   &[disabled] {
     .upload__control-icon {
       fill: $pink;
+    }
+  }
+}
+
+.upload__control-btn:not([disabled]) {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .upload__control-icon {
+      fill: #8d949b;
     }
   }
 }

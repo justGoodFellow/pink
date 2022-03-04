@@ -28,74 +28,74 @@
       color: rgba($pink, 0.3);
     }
   }
+}
 
-  &--fluid {
-    width: 100%;
-  }
+.btn--fluid {
+  width: 100%;
+}
 
-  &--pink {
-    color: $pink;
+.btn--pink {
+  color: $pink;
 
-    border-color: $pink;
+  border-color: $pink;
 
-    &:not([disabled]) {
-      &:hover,
-      &:focus {
-        color: white;
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: white;
 
-        background-color: $pink;
-      }
+      background-color: $pink;
+    }
 
-      &:active {
-        color: rgba(white, 0.3);
-      }
+    &:active {
+      color: rgba(white, 0.3);
     }
   }
+}
 
-  &--gray {
-    color: $dark-blue;
+.btn--gray {
+  color: $dark-blue;
 
-    border-color: $dark-blue;
-    opacity: 0.1;
+  border-color: $dark-blue;
+  opacity: 0.1;
 
-    &:not([disabled]) {
-      &:hover,
-      &:focus {
-        color: $dark-blue;
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: $dark-blue;
 
-        opacity: 0.3;
-      }
+      opacity: 0.3;
+    }
 
-      &:active {
-        color: rgba(white, 0.3);
+    &:active {
+      color: rgba(white, 0.3);
 
-        background-color: $dark-blue;
-      }
+      background-color: $dark-blue;
+    }
+  }
+}
+
+.btn--green {
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 5px;
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: white;
+
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
     }
   }
 
-  &--green {
-    text-transform: uppercase;
-
-    background-color: #2aab6d;
-    border: none;
-    border-radius: 5px;
-
-    &:not([disabled]) {
-      &:hover,
-      &:focus {
-        color: white;
-
-        background-color: #1c9b5e;
-      }
-
-      &:active {
-        color: rgba(white, 0.3);
-      }
-    }
-
-    &[disabled] {
-      background-color: $gray--dark;
-    }
+  &[disabled] {
+    background-color: $gray--dark;
   }
 }

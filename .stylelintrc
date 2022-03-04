@@ -1,9 +1,9 @@
 {
   "extends": "stylelint-config-htmlacademy",
-
   "rules": {
-    "string-quotes": "single",
+    "color-named": "always-where-possible",
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "string-quotes": "single"
   }
 }
