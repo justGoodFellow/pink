@@ -4,8 +4,13 @@ form.upload(action='#' method='post')
       .upload__column.upload__column--first
         .upload__img-wrap
           picture
-            source(media='(min-width: 660px)' srcset='img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x')
-            img.upload__img(src='img/photo-road-mobile@1x.jpg' srcset='img/photo-road-mobile@2x.jpg 2x' alt='')
+            source(
+              media='(min-width: 660px)'
+              srcset='img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x')
+            img.upload__img(
+              src='img/photo-road-mobile@1x.jpg'
+              srcset='img/photo-road-mobile@2x.jpg 2x'
+              alt='')
       .upload__column.upload__column--second
         .upload__controls
           .upload__control
