@@ -31,7 +31,20 @@
   &:hover,
   &:focus {
     outline: none;
+  }
+}
 
+.slider__arrow-icon {
+  fill: #b2b2b2;
+}
+
+.slider__arrow--right .slider__arrow-icon {
+  transform: rotate(180deg);
+}
+
+.slider__arrow {
+  &:hover,
+  &:focus {
     .slider__arrow-icon {
       opacity: 0.6;
 
@@ -46,14 +59,6 @@
       fill: $dark-blue;
     }
   }
-}
-
-.slider__arrow-icon {
-  fill: #b2b2b2;
-}
-
-.slider__arrow--right .slider__arrow-icon {
-  transform: rotate(180deg);
 }
 
 .slider__toggle {

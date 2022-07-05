@@ -119,11 +119,17 @@
 
 .upload__control-btn {
   @include button-reset;
+}
 
-  &[disabled] {
-    .upload__control-icon {
-      fill: $pink;
-    }
+.upload__control-icon {
+  display: block;
+
+  fill: #b5b9be;
+}
+
+.upload__control-btn[disabled] {
+  .upload__control-icon {
+    fill: $pink;
   }
 }
 
@@ -138,12 +144,6 @@
       fill: #8d949b;
     }
   }
-}
-
-.upload__control-icon {
-  display: block;
-
-  fill: #b5b9be;
 }
 
 .upload__bottom-btns {
