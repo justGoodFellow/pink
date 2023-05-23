@@ -24,7 +24,7 @@
 
   cursor: pointer;
 
-  @media (max-width: $desktop-width - 1) {
+  @media (max-width: ($desktop-width - 1)) {
     display: none;
   }
 
@@ -42,23 +42,17 @@
   transform: rotate(180deg);
 }
 
-.slider__arrow {
-  &:hover,
-  &:focus {
-    .slider__arrow-icon {
-      opacity: 0.6;
+.slider__arrow:hover .slider__arrow-icon,
+.slider__arrow:focus .slider__arrow-icon {
+  opacity: 0.6;
 
-      fill: $dark-blue;
-    }
-  }
+  fill: $dark-blue;
+}
 
-  &:active {
-    .slider__arrow-icon {
-      opacity: 0.1;
+.slider__arrow:active .slider__arrow-icon {
+  opacity: 0.1;
 
-      fill: $dark-blue;
-    }
-  }
+  fill: $dark-blue;
 }
 
 .slider__toggle {

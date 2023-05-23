@@ -5,7 +5,7 @@
     @media (min-width: $tablet-width) {
       margin-right: 20px;
 
-      @media (max-width: $desktop-width - 1) {
+      @media (max-width: ($desktop-width - 1)) {
         &:nth-child(even) {
           margin-right: 0;
         }

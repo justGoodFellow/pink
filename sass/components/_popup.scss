@@ -61,7 +61,7 @@
 
 .popup--error {
   .popup__footer {
-    @media (max-width: $desktop-width - 1) {
+    @media (max-width: ($desktop-width - 1)) {
       padding-top: 0;
 
       background-color: inherit;

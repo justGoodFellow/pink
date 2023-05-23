@@ -5,31 +5,32 @@
   "author": "Sergey Bodnaryuk <s.bodnaryuk@gmail.com>",
   "private": true,
   "engines": {
-    "node": "16.15.1"
+    "node": "18.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "pug-lint": "pug-lint pug/**/*.pug",
     "stylelint": "stylelint \"sass/**/*.scss\"",
     "eslint": "eslint js",
-    "test": "npm run editorconfig && npm run pug-lint && npm run stylelint && npm run eslint",
+    "prettier": "prettier -c **/*.{js,json,md,scss}",
+    "test": "npm run editorconfig && npm run pug-lint && npm run stylelint && npm run eslint && npm run prettier",
     "build": "gulp",
-    "start": "gulp && gulp serve"
+    "start": "gulp && gulp server"
   },
   "browserslist": [
     "> 0.5% in RU",
     "last 2 versions",
-    "IE 11",
-    "iOS >= 10.3",
-    "not dead"
+    "not dead",
+    "iOS >= 10.3"
   ],
   "editorconfig-cli": [
     "*.js",
     "*.json",
+    ".*.json",
     "pug/**/*.pug",
-    "img/*.svg",
+    "img/**/*.svg",
     "sass/**/*.scss",
-    "js/*.js"
+    "js/**/*.js"
   ],
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
@@ -38,7 +39,7 @@
     "css-mqpacker": "^7.0.0",
     "del": "^6.1.1",
     "eslint": "^8.19.0",
-    "eslint-config-htmlacademy": "^6.0.0",
+    "eslint-config-htmlacademy": "^9",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
@@ -49,14 +50,20 @@
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
+    "gulp-webp": "^4.0.1",
     "postcss": "^8.4.14",
-    "postcss-object-fit-images": "^1.1.2",
+    "prettier": "2.8.8",
     "pug-lint": "^2.6.0",
     "sass": "^1.53.0",
-    "stylelint": "^14.9.1",
-    "stylelint-config-htmlacademy": "^0.1.12",
-    "stylelint-config-standard-scss": "^4.0.0"
+    "stylelint": "^15",
+    "stylelint-config-htmlacademy": "^1",
+    "stylelint-config-recommended-scss": "^12",
+    "stylelint-order": "^6.0.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.19"
   }
 }

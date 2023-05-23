@@ -28,7 +28,7 @@
     @include container-tablet;
   }
 
-  @media (max-width: $desktop-width - 1) {
+  @media (max-width: ($desktop-width - 1)) {
     border-bottom: 1px solid black;
   }
 

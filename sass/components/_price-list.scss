@@ -81,7 +81,7 @@
 
 .price-list__items th:first-child,
 .price-list__items td:first-child {
-  @media (max-width: $tablet-width - 1) {
+  @media (max-width: ($tablet-width - 1)) {
     display: none;
   }
 }

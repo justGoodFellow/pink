@@ -59,7 +59,7 @@
 }
 
 .info__feature-img-cntr {
-  @media (max-width: $desktop-width - 1) {
+  @media (max-width: ($desktop-width - 1)) {
     display: none;
   }
 }
